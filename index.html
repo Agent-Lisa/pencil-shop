@@ -1,0 +1,84 @@
+
+<html>
+<head>
+    <title>pencil shop menu</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .menu-container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-item {
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item-name {
+            font-weight: bold;
+        }
+        .menu-item-description {
+            font-size: 14px;
+            color: #666666;
+        }
+        .menu-item-price {
+            float: right;
+            font-weight: bold;
+            color: #009999;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-header">pencil shop menu</h1>
+        <ul class="menu-items">
+            <li class="menu-item">
+                <span class="menu-item-name">graphite pencil</span>
+                <span class="menu-item-description">a high-quality graphite pencil suitable for sketching and writing.</span>
+                <span class="menu-item-price">$1.99</span>
+            </li>
+            <li class="menu-item">
+                <span class="menu-item-name">colored pencil set</span>
+                <span class="menu-item-description">a set of 24 vibrant colored pencils perfect for art and design.</span>
+                <span class="menu-item-price">$14.99</span>
+            </li>
+            <li class="menu-item">
+                <span class="menu-item-name">mechanical pencil</span>
+                <span class="menu-item-description">a durable mechanical pencil with a comfortable grip and precise lead advancement.</span>
+                <span class="menu-item-price">$9.99</span>
+            </li>
+            <li class="menu-item">
+                <span class="menu-item-name">pencil sharpener</span>
+                <span class="menu-item-description">a reliable pencil sharpener with a compact design and easy-to-use interface.</span>
+                <span class="menu-item-price">$4.99</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // add event listener to menu items
+        const menuitems = document.queryselectorall('.menu-item');
+        menuitems.foreach(item => {
+            item.addeventlistener('click', () => {
+                alert('you clicked on a menu item!');
+            });
+        });
+    </script>
+</html>
